@@ -3,10 +3,12 @@ package com.classroom.assignment.model.request;
 public class Student {
   private String id;
   private String name;
+  private String senkou;
 
-  public Student(String id, String name) {
+  public Student(String id, String name, String senkou) {
     this.setId(id);
     this.setName(name);
+    this.setSenkou(senkou);
   }
 
   public String getName() {
@@ -25,5 +27,12 @@ public class Student {
     this.id = id;
   }
 
+  public String getSenkou() {
+    return senkou;
+  }
+
+  public void setSenkou(String senkou) {
+    this.senkou = senkou;
+  }
 
 }
